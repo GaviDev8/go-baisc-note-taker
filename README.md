@@ -19,4 +19,4 @@ To get started:
 3. Start writing your note body
 4. Delete any notes if done or clear the body og the note
 
-Live link:
+Live link: https://go-baisc-note-taker.onrender.com/
