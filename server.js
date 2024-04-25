@@ -26,11 +26,11 @@ app.get("/notes", (req, res) => {
 })
 
 app.get("*", (req, res) => {
-    res.sendFile(path.JOIN(__dirname, "public/index.html"))
+    res.sendFile(path.join(__dirname, "public/index.html"))
 })
 
 app.delete("/api/notes/:id", (req, res) => {
-    store.removeNotes(re.params.id).then(() => {
+    store.removeNotes(req.params.id).then(() => {
         return res.status(200).json({ delete : true, id: req.params.id})
 })
 })
